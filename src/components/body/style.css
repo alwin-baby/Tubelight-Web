@@ -1,0 +1,39 @@
+body{
+    background-color:rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: center
+    }
+.headerbar
+{
+    position: absolute;
+    display:inline-block;
+    top : 19px;
+}
+.headerbar2
+{
+    position: absolute;
+    display:inline-block; 
+    right: 89px;
+    top:25px   
+}
+.welcome
+{
+    color: white;
+    top: 136.26px;
+}
+.fbox
+{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+.tbox
+{
+   color: yellow;
+}
+
