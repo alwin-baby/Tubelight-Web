@@ -1,17 +1,25 @@
 body{
-    background-color:rgba(0, 0, 0, 1);
+    background-color: #191919;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat';
+
 }
-header{
+.nav1{
+    
+    height: 12vh;
+    width: 100vw;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    background-color:black;
+  
     }
 .headerbar
 {
     position: absolute;
     display:inline-block;
+    background-color: black;
     top : 19px;
 }
 .headerbar2
@@ -24,16 +32,60 @@ header{
 .welcome
 {
     color: white;
-    top: 136.26px;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'Montserrat';
+    
 }
+.fname
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+.iname
+{
+    height: 56px;
+    width: 505px;
+    border-radius: 6px;
+    
+}
+
 .fbox
 {
-    display: contents;
-    justify-content: center;
-    align-items: center;
+    top: 136.26px;
+ 
 }
 .tbox
 {
-   color: yellow;
+   color:rgba(255, 239, 0, 1);
+   position: absolute;
+   left: 30%;  
+}
+.Already
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log
+{
+    list-style : none ;
+    border : 2px solid rgba(255, 239, 0, 1);
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    border-radius : 5px ;
+    color:rgba(255, 239, 0, 1) ;
+    background-color: rgba(5, 5, 5, 0);
+}
+.signup
+{
+    height: 56px;
+    width: 514px;
+    border-radius: 6px; 
+    background-color:rgba(255, 239, 0, 1);
+    font-weight: 700;
+    font-size: 24px;
 }
 

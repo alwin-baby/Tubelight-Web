@@ -3,15 +3,16 @@ import Heading from '../components/headerBar/Heading'
 import Login from '../components/headerBar/Login'
 import Welcome from '../components/body/Welcome'
 
+
 function signUp() {
   return (
-    <>
-    <header>
+    <form>
+    <nav className='nav1'>
         <Heading/>
         <Login/>
-    </header>    
+    </nav>    
         <Welcome/>
-    </>
+    </form>
   )
 }
 

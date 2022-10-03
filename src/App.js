@@ -1,5 +1,12 @@
+import React from "react";
+import SignUp from './pages/SignUp.jsx'
+
 function App() {
-    return <div>Hello TubeLight</div>;
+    return (
+    <>
+        <SignUp/>
+    </>
+    )
 }
 
 export default App;
