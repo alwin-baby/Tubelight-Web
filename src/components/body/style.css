@@ -85,6 +85,17 @@ body{
     color:rgba(255, 239, 0, 1) ;
     background-color: rgba(5, 5, 5, 0);
 }
+.sign
+{
+    list-style : none ;
+    border : 2px solid rgba(255, 239, 0, 1);
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    border-radius : 5px ;
+    color:rgba(255, 239, 0, 1) ;
+    background-color: rgba(5, 5, 5, 0);
+}
 .signup
 {
     height: 56px;
