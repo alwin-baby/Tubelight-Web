@@ -1,10 +1,26 @@
 import React from "react";
-import signUpPage from "./pages/SignUpPage";
+
+// import { Routes,Route} from 'react-router-dom'
+import LandingPage from "./pages/LandingPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+
 
 function App() {
     return (
     <>
-        <signUpPage/>
+
+            {/* <Routes> */}
+
+            {/* <Route exact path = "/" component = {LandingPage} /> */}
+            {/* <Route path = '/loginpage'><LoginPage/></Route>
+            <Route path = '/signuppage'><SignUpPage/></Route> */}
+
+            {/* </Routes> */}
+    
+        <LandingPage/>
+        {/* <LoginPage/> */}
+        {/* <SignUpPage/> */}
     </>
     )
 }
