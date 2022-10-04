@@ -18,7 +18,7 @@ function App() {
 
             {/* </Routes> */}
     
-        {/* <LandingPage/> */}
+        <LandingPage/>
         {/* <LoginPage/> */}
         {/* <SignUpPage/> */}
     </>
