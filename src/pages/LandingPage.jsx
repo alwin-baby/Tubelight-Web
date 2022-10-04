@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../components/headerBar/Heading";
-import Login from "../components/headerBar/Login";
+import Login from "../components/headerBar/LoginButton";
 
 import classes from "./LandingPage.module.css";
 

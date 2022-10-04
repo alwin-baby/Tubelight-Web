@@ -8,7 +8,7 @@ import style from './style.css'
 
 
 
-function Welcome() {
+function SignupPageBody() {
   return (
     <form className='fbox'>
       
@@ -60,4 +60,4 @@ function Welcome() {
   )
 }
 
-export default Welcome
+export default SignupPageBody
