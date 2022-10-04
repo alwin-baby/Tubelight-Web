@@ -1,7 +1,8 @@
 import React from 'react'
 import Heading from '../components/headerBar/Heading'
-import Login from '../components/headerBar/Login'
+import LoginButton from '../components/headerBar/LoginButton'
 import Welcome from '../components/body/Welcome'
+
 
 
 function signUp() {
@@ -9,7 +10,7 @@ function signUp() {
     <form>
     <nav className='nav1'>
         <Heading/>
-        <Login/>
+        <LoginButton/>
     </nav>    
         <Welcome/>
     </form>

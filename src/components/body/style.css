@@ -65,8 +65,14 @@ body{
 {
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    
+}
+.login
+{
+    display: flex;
+    padding-left: 10px;
+    color:rgba(255, 239, 0, 1) ; 
 }
 .log
 {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Login() {
+function LoginButton() {
   return (
     <div className='headerbar2'>
       <button className='log' type='submit'>LOGIN</button>
@@ -8,4 +8,4 @@ function Login() {
   )
 }
 
-export default Login
+export default LoginButton
