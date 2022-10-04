@@ -1,10 +1,10 @@
 import React from "react";
-import SignUp from './pages/SignUpPage.jsx'
+import signUpPage from "./pages/SignUpPage";
 
 function App() {
     return (
     <>
-        <SignUp/>
+        <signUpPage/>
     </>
     )
 }
