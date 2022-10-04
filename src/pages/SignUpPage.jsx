@@ -1,20 +1,19 @@
 import React from 'react'
 import Heading from '../components/headerBar/Heading'
 import LoginButton from '../components/headerBar/LoginButton'
-import Welcome from '../components/body/Welcome'
+import SignupPageBody from '../components/body/SignupPageBody'
 
 
-
-function signUp() {
+function signUpPage() {
   return (
     <form>
-    <nav className='nav1'>
+      <nav className='nav1'>
         <Heading/>
         <LoginButton/>
-    </nav>    
-        <Welcome/>
+      </nav>    
+        <SignupPageBody/>
     </form>
   )
 }
 
-export default signUp
+export default signUpPage
