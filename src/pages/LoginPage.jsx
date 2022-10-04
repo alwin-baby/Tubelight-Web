@@ -5,7 +5,7 @@ import LoginPageBody from "../components/body/LoginPageBody";
 
 function LoginPage() {
     return (
-        <div>
+        <form>
             <nav className="nav1">
                 <Heading />
                 <SignUpButton />
@@ -13,7 +13,7 @@ function LoginPage() {
             <div>
                 <LoginPageBody />
             </div>
-        </div>
+        </form>
     );
 }
 

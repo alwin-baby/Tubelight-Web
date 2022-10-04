@@ -36,13 +36,13 @@ function LoginPageBody() {
                                  <a href>Forgot password ?</a>
                             </p>
                         </div>
-                        <button>Signup</button>
+                        <button>Login</button>
                     </table>
                 </form>
             </div>
             <div>
                 <p>
-                    Don't have an account ? <a href>Login</a>{" "}
+                    Don't have an account ? <a href>Register</a>{" "}
                 </p>
             </div>
         </div>

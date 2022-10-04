@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../components/headerBar/Heading";
-import Login from "../components/headerBar/LoginButton";
+import LoginButton from '../components/headerBar/LoginButton'
 
 import classes from "./LandingPage.module.css";
 
@@ -11,7 +11,7 @@ function LandingPage() {
                 <div className={classes.logoDiv}>
                     <Heading />
                 </div>
-                <Login />
+                <LoginButton />
             </nav>
             <div className={classes.writeupDiv}>
                 <p className={classes.writeup1}>
