@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import classes from "./LoginPageBody.module.css";
 // eslint-disable-next-line
@@ -33,7 +34,7 @@ function LoginPageBody() {
                         </div>
                         <div>
                             <p>
-                                 <a href>Forgot password ?</a>
+                                <a href>Forgot password ?</a>
                             </p>
                         </div>
                         <button>Login</button>
@@ -42,7 +43,7 @@ function LoginPageBody() {
             </div>
             <div>
                 <p>
-                    Don't have an account ? <a href>Register</a>{" "}
+                    Don't have an account ? <Link to="/signup">Register</Link>
                 </p>
             </div>
         </div>

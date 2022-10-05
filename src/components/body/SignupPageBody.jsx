@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 // eslint-disable-next-line
 import style from './style.css'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -54,7 +55,7 @@ function SignupPageBody() {
         <button className='signup'>Signup</button>
         <br></br>
         
-        <p className="Already">Already have an account ? <a className='login' href >Login</a> </p>
+        <p className="Already">Already have an account ? <Link to='/login' className='login' href >Login</Link> </p>
         </table>
     </form>
   )

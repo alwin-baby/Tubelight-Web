@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../components/headerBar/Heading";
-import LoginButton from '../components/headerBar/LoginButton'
+import LoginButton from "../components/headerBar/LoginButton";
+import { Link } from "react-router-dom";
 
 import classes from "./LandingPage.module.css";
 
@@ -11,7 +12,9 @@ function LandingPage() {
                 <div className={classes.logoDiv}>
                     <Heading />
                 </div>
-                <LoginButton />
+                <Link to="/login">
+                    <LoginButton />
+                </Link>
             </nav>
             <div className={classes.writeupDiv}>
                 <p className={classes.writeup1}>
@@ -27,7 +30,9 @@ function LandingPage() {
                     Cancel <br></br> anytime. Includes free trial for first 14
                     days
                 </p>
-                <button className={classes.button}>GET STARTED</button>
+                <Link to="/signup">
+                    <button className={classes.button}>GET STARTED</button>
+                </Link>
                 <p className={classes.writeup4}>
                     Ready to watch? Click get started to view our plans
                 </p>
