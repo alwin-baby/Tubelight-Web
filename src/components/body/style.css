@@ -59,6 +59,18 @@ body{
     border-radius: 6px;
     
 }
+.trpass,.trconfirmpass
+{
+    position: relative;
+}
+.toggleicon{
+position : absolute ;
+color:black;
+top : 80px ;
+right : 30px ;
+z-index : 1000 ;
+cursor:pointer;
+}
 
 .fbox
 {
