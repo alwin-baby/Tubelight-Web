@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function LoginPage() {
     return (
-        <form>
+        <div>
             <nav className="nav1">
                 <Heading />
                 <Link to="/signup">
@@ -16,7 +16,7 @@ function LoginPage() {
             <div>
                 <LoginPageBody />
             </div>
-        </form>
+        </div>
     );
 }
 

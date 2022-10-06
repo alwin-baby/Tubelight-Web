@@ -60,7 +60,7 @@ function LoginPageBody() {
                                 </td>
                                 <td className={classes.tdContainer}>
                                     <p className={classes.forgotPassword}>
-                                        <a href>Forgot password ?</a>
+                                        <a>Forgot password ?</a>
                                     </p>
                                 </td>
                             </tr>
