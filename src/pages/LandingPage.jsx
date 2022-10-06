@@ -30,7 +30,7 @@ function LandingPage() {
                     Cancel <br></br> anytime. Includes free trial for first 14
                     days
                 </p>
-                <Link to="/signup">
+                <Link to="/home">
                     <button className={classes.button}>GET STARTED</button>
                 </Link>
                 <p className={classes.writeup4}>
