@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import usePasswordToggle from "./hooks/usePasswordToggle";
+
+import usePasswordToggle1 from "./hooks/usePasswordToggle1";
 
 import classes from "./LoginPageBody.module.css";
 // eslint-disable-next-line
@@ -9,7 +10,7 @@ import classes from "./LoginPageBody.module.css";
 
 function LoginPageBody() {
 
-    const [inputType,icon] = usePasswordToggle()
+    const [inputType,icon] = usePasswordToggle1()
 
     return (
         <div className={classes.bodyContainer}>
