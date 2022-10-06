@@ -1,0 +1,122 @@
+body{
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+
+}
+.nav1{
+    
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+  
+    }
+.headerbar
+{
+    position: absolute;
+    display:inline-block;
+    background-color: black;
+    top : 19px;
+}
+.headerbar2
+{
+    position: absolute;
+    display:inline-block; 
+    right: 89px;
+    top:25px   
+}
+.welcomeContainer
+{
+    width: 505px;
+    text-align: left;
+    
+    
+}
+.welcome
+{
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 157px;
+    
+}
+.fname
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+.iname
+{
+    width: 475px;
+    height: 57px;
+    border-radius: 6px;
+    
+}
+
+.fbox
+{
+    top: 136.26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+ 
+}
+.tbox
+{
+    color:rgba(255, 239, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.Already
+{
+    color: white;
+    display: flex;
+    justify-content:center;
+    
+}
+.login
+{
+    display: flex;
+    padding-left: 10px;
+    color:rgba(255, 239, 0, 1) ; 
+}
+.log
+{
+    list-style : none ;
+    border : 2px solid rgba(255, 239, 0, 1);
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    border-radius : 5px ;
+    color:rgba(255, 239, 0, 1) ;
+    background-color: rgba(5, 5, 5, 0);
+}
+.sign
+{
+    list-style : none ;
+    border : 2px solid rgba(255, 239, 0, 1);
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    border-radius : 5px ;
+    color:rgba(255, 239, 0, 1) ;
+    background-color: rgba(5, 5, 5, 0);
+}
+.signup
+{
+    width: 505px;
+    height: 57px;
+    border-radius: 6px; 
+    background-color:rgba(255, 239, 0, 1);
+    font-weight: 700;
+    font-size: 24px;
+}
+
