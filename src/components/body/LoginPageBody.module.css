@@ -62,6 +62,19 @@ input {
     margin-bottom: 9px;
 }
 
+.toggleTd {
+    position: relative;
+}
+
+.togglePasswordIcon {
+    position: absolute;
+    right: 36px;
+    top: 22px;
+    height: 18.132226943969727px;
+    width: 22.786636352539062px;
+    border-radius: 0px;
+}
+
 .checkboxContainer {
     width: 20px;
 }
@@ -121,8 +134,8 @@ button {
     padding-left: 7px;
 }
 
-.footerText{
-font-size: 16px;
-font-weight: 300;
-margin-top: 56px;
+.footerText {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 56px;
 }
