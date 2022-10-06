@@ -1,3 +1,128 @@
-p{
+p {
     color: white;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcomeContainer {
+    width: 505px;
+    text-align: left;
+}
+
+.welcome {
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 157px;
+}
+
+.formContainer {
+    width: 505px;
+}
+
+.userName {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffef00;
+    margin-top: 86px;
+    margin-bottom: 9px;
+}
+
+input {
+    width: 475px;
+    height: 59px;
+    background: #ffffff;
+    border: 0.6px solid #282828;
+    border-radius: 6px;
+    padding-left: 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.password {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffef00;
+    margin-top: 38px;
+    margin-bottom: 9px;
+}
+
+.checkboxContainer {
+    width: 20px;
+}
+
+.checkbox {
+    margin-left: 0;
+    margin-right: 12px;
+    box-sizing: border-box;
+    width: 17.91px;
+    height: 15px;
+    background: #ffffff;
+    border: 1px solid #d2d2d2;
+}
+
+.tdContainer {
+    text-align: right;
+}
+
+.rememberMe {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    width: 100px;
+}
+
+.forgotPassword {
+    margin-top: 23px;
+    height: auto;
+    padding-right: 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+button {
+    width: 505px;
+    height: 57px;
+    background: #ffef00;
+    border-radius: 6px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.register {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffef00;
+    text-decoration: none;
+    padding-left: 7px;
+}
+
+.footerText{
+font-size: 16px;
+font-weight: 300;
+margin-top: 56px;
 }
