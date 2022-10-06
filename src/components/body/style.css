@@ -96,10 +96,13 @@ cursor:pointer;
 }
 .login
 {
-    display: flex;
-    padding-left: 10px;
-    color:rgba(255, 239, 0, 1) ; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffef00;
+    text-decoration: none;
+    padding-left: 7px;
 }
+
 .log
 {
     list-style : none ;
