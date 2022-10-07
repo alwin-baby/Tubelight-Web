@@ -2,35 +2,29 @@ import { createContext, useReducer } from "react";
 
 //creates the context and initial values are set
 const initialState = {
-    homeStatus: false,
+    homePageStatus: false,
 };
 const DataContext = createContext(initialState);
 
 export const ACTIONS = { //defining actions and exporting them
-    DISPLAY_TOAST: "display-toast",
-    UNDISPLAY_TOAST: "undisplay-toast"
+    DISPLAY_HOME_PAGE: "display-home-page",
 };
 
-const toastReducer = (toastStatus, action) => { //functions for displaying and undisplaying toast
+const homePageReducer = (homePageStatus, action) => { //functions for displaying and undisplaying toast
     switch (action.type) {
-        case "display-toast":
-            return (toastStatus = true);
-        case "undisplay-toast":
-            return (toastStatus = false);
+        case "display-home-page":
+            return (homePageStatus = true);
         default:
-            return (toastStatus = false);
+            return (homePageStatus = false);
     }
 };
 
 export const DataContextProvider = (props) => {
-    const [tasks, dispatch] = useReducer(taskReducer, []);
-    const [toastStatus, dispatchToastStatus] = useReducer(toastReducer, false);
+    const [homePageStatus, dispatchHomePageStatus] = useReducer(homePageReducer, false);
 
     const context = {
-        tasks: tasks,
-        dispatch: dispatch,
-        toastStatus: toastStatus,
-        dispatchToastStatus: dispatchToastStatus,
+        homePageStatus: homePageStatus,
+        dispatchHomePageStatus: dispatchHomePageStatus
     };
 
     return (
