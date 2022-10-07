@@ -3,22 +3,56 @@ import { Link } from "react-router-dom";
 // eslint-disable-next-line
 import style from "./style.css";
 import UserPool from "../body/userPool/UserPool";
+// import {
+//         CognitoUserPool,
+//         CognitoUserAttribute,
+//         CognitoUser,
+// } from 'amazon-cognito-identity-js';
+
+
 
 import usePasswordToggle1 from "./hooks/usePasswordToggle1";
 import usePasswordToggle2 from "./hooks/usePasswordToggle2";
 
 function SignupPageBody() {
-  //const fname = fname;
+  const [name,setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const validator = (e) => {
-    emailValidation(e);
-    passwordValidation(e);
-    confirmPasswordValidation(e);
-  };
+  let AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+  //let CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
 
+  const validator = (e) => {
+    const isEmailValid = emailValidation(e);
+    const isPassValid = passwordValidation(e);
+    const isCPassValid =  confirmPasswordValidation(e);
+
+    let attributeList = [];
+
+    let dataEmail = {
+      Name: 'email',
+      Value: email,
+    };
+    
+
+    // let userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
+
+    let attributeEmail = new AmazonCognitoIdentity.CognitoUserAttribute(dataEmail);
+
+    attributeList.push(attributeEmail);
+
+    if(isEmailValid && isPassValid && isCPassValid){
+      UserPool.signUp(name, password, attributeList,null , (err, data) => {
+        if (err) {
+          console.error(err);
+        }
+        console.log(data);
+      });
+    }
+    
+  };
+  const handleNameChange = (e) => setName(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
   const handleConfirmPasswordChange = (e) => setConfirmPassword(e.target.value);
@@ -33,7 +67,10 @@ function SignupPageBody() {
     if (emailRegEx.test(email) === false && email !== "") {
       e.preventDefault();
       alert("Please enter a valid email.");
+      return false;
+    
     }
+    return true
   };
 
   const passwordValidation = (e) => {
@@ -42,32 +79,30 @@ function SignupPageBody() {
       alert(
         "Password must be 8 to 20 characters long and should contain atleast one uppercase character, one lowercase character, one special character ( @ / & _ * # ? ~ ! $ \\ ) and a number."
       );
+      return false
     }
+    return true
   };
 
   const confirmPasswordValidation = (e) => {
     if (password !== confirmPassword) {
       e.preventDefault();
       alert("Passwords does not match.");
+      return false
     }
+    return true
   };
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    UserPool.signup(email, password,confirmPassword,null , (err, data) => {
-      if (err) {
-        console.error(err);
-      }
-      console.log(data);
-    });
-  };
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  // };
 
   // toggle eye change individual inputs
   const [PasswordInputType1, Icon1] = usePasswordToggle1();
   const [PasswordInputType2, Icon2] = usePasswordToggle2();
 
   return (
-    <form className="fbox" onSubmit={onSubmit}>
+    <div className="fbox" >
       <div className="welcomeContainer">
         <p className="welcome">Welcome !</p>
       </div>
@@ -79,8 +114,9 @@ function SignupPageBody() {
               <br></br>
               <br></br>
               <input
-                
+                value={name}
                 required
+                onChange={handleNameChange}
                 type="text"
                 placeholder="Enter your full name"
                 className="iname"
@@ -144,7 +180,7 @@ function SignupPageBody() {
             <td>
               <br></br>
               <br></br>
-              <button onClick={validator} className="signup">
+              <button onClick={validator} type="submit" className="signup">
                 Signup
               </button>
               <br></br>
@@ -163,8 +199,8 @@ function SignupPageBody() {
           </tr>
         </tbody>
       </table>
-    </form>
+    </div>
   );
-}
+ }
 
 export default SignupPageBody;
