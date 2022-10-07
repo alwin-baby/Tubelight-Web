@@ -1,5 +1,5 @@
-alw
-rahul
+alwin.bay@gmail.com
+rahul@gmail.com
 pw - Password@1
 
 # Getting Started with Create React App
