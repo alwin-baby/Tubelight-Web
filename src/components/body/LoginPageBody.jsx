@@ -16,13 +16,13 @@ function LoginPageBody() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        
-        const user = new CognitoUser ({
+
+        const user = new CognitoUser({
             Username: email,
-            Pool: UserPool
+            Pool: UserPool,
         });
 
-        const authDetails = new AuthenticationDetails ({
+        const authDetails = new AuthenticationDetails({
             Username: email,
             Password: password,
         });
@@ -33,8 +33,8 @@ function LoginPageBody() {
             },
             onFailure: (err) => {
                 console.error("Failure: ", err);
-            }
-        })
+            },
+        });
     };
 
     const [inputType, icon] = usePasswordToggle1();
@@ -57,6 +57,7 @@ function LoginPageBody() {
                             <tr>
                                 <td colSpan="3">
                                     <input
+                                        required
                                         value={email}
                                         onChange={handleEmail}
                                         type="email"
@@ -74,6 +75,7 @@ function LoginPageBody() {
                             <tr>
                                 <td className={classes.toggleTd} colSpan="3">
                                     <input
+                                        required
                                         value={password}
                                         onChange={handlePassword}
                                         type={inputType}
@@ -95,7 +97,9 @@ function LoginPageBody() {
                             </tr>
                             <tr>
                                 <td colSpan="3">
-                                    <button onClick={onSubmit} type="submit">Login</button>
+                                    <button onClick={onSubmit} type="submit">
+                                        Login
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
