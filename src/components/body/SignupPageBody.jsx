@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line
 import style from "./style.css";
-//import UserPool from "../body/userPool/UserPool";
+import UserPool from "../body/userPool/UserPool";
 
 import usePasswordToggle1 from "./hooks/usePasswordToggle1";
 import usePasswordToggle2 from "./hooks/usePasswordToggle2";
@@ -52,22 +52,22 @@ function SignupPageBody() {
     }
   };
 
-//   const onSubmit = (e) => {
-//     e.preventDefault();
-//     UserPool.signup(email, password,confirmPassword,null , (err, data) => {
-//       if (err) {
-//         console.error(err);
-//       }
-//       console.log(data);
-//     });
-//   };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    UserPool.signup(email, password,confirmPassword,null , (err, data) => {
+      if (err) {
+        console.error(err);
+      }
+      console.log(data);
+    });
+  };
 
   // toggle eye change individual inputs
   const [PasswordInputType1, Icon1] = usePasswordToggle1();
   const [PasswordInputType2, Icon2] = usePasswordToggle2();
 
   return (
-    <form className="fbox" >
+    <form className="fbox" onSubmit={onSubmit}>
       <div className="welcomeContainer">
         <p className="welcome">Welcome !</p>
       </div>
