@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 import usePasswordToggle1 from "./hooks/usePasswordToggle1";
 
 import classes from "./LoginPageBody.module.css";
-// eslint-disable-next-line
-// import style from "./style.css";
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function LoginPageBody() {
-
-    const [inputType,icon] = usePasswordToggle1()
+    const [inputType, icon] = usePasswordToggle1();
 
     return (
         <div className={classes.bodyContainer}>
@@ -50,23 +46,15 @@ function LoginPageBody() {
                                         type={inputType}
                                         placeholder="Enter your Password"
                                     ></input>
-                                    <span className={classes.togglePasswordIcon}>{icon}</span>
+                                    <span
+                                        className={classes.togglePasswordIcon}
+                                    >
+                                        {icon}
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
-                                <td className={classes.checkboxContainer}>
-                                    <input
-                                        className={classes.checkbox}
-                                        type="checkbox"
-                                        name="checkbox"
-                                    ></input>
-                                </td>
-                                <td>
-                                    <p className={classes.rememberMe}>
-                                        Remember Me
-                                    </p>
-                                </td>
-                                <td className={classes.tdContainer}>
+                                <td colSpan="3" className={classes.tdContainer}>
                                     <p className={classes.forgotPassword}>
                                         <>Forgot password ?</>
                                     </p>
